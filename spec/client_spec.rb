@@ -9,7 +9,7 @@ describe WoocommerceAPIV2::Client do
 
   context "oauth http mode" do
     let!(:woocommerce_params) do
-      Thread.current["WoocommerceAPI"] = nil
+      Thread.current["WoocommerceAPIV2"] = nil
       super().merge(mode: :oauth_http)
     end
     it { expect(WoocommerceAPIV2::Product.count).to eq 201 }
@@ -17,7 +17,7 @@ describe WoocommerceAPIV2::Client do
 
   context "query https mode" do
     let!(:woocommerce_params) do
-      Thread.current["WoocommerceAPI"] = nil
+      Thread.current["WoocommerceAPIV2"] = nil
       super().merge(mode: :query_https)
     end
     it { expect(WoocommerceAPIV2::Product.count).to eq 201 }
@@ -25,7 +25,7 @@ describe WoocommerceAPIV2::Client do
 
   context "be thread safety" do
     it "can handle multi-thread" do
-      Thread.current["WoocommerceAPI"] = nil
+      Thread.current["WoocommerceAPIV2"] = nil
       WoocommerceAPIV2::Client.new(consumer_key: 'ABC_KEY', consumer_secret: 'ABC_SECRET', store_url: 'https://api.woocommerce.com/ABC')
 
       Thread.new do

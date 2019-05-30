@@ -3,7 +3,7 @@ module WoocommerceAPIV2
     module ClassMethods
       def has_many(association_name, options={})
         class_name = options[:class_name].presence || association_name.to_s.singularize.classify
-        class_name.prepend("WoocommerceAPI::")
+        class_name.prepend("WoocommerceAPIV2::")
 
         define_method association_name do
           association_class = class_name.constantize
@@ -15,7 +15,7 @@ module WoocommerceAPIV2
 
       def has_one(association_name, options={})
         class_name = options[:class_name].presence || association_name.to_s.classify
-        class_name.prepend("WoocommerceAPI::")
+        class_name.prepend("WoocommerceAPIV2::")
 
         define_method association_name do
           association_class = class_name.constantize

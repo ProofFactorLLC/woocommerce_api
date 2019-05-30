@@ -78,7 +78,7 @@ module WoocommerceAPIV2
                           'V3'
                         end
 
-      "WoocommerceAPI::#{current_version}::#{singleton_name.classify}".constantize
+      "WoocommerceAPIV2::#{current_version}::#{singleton_name.classify}".constantize
     end
   end
 end

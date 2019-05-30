@@ -3,7 +3,7 @@ module WoocommerceAPIV2
     include HTTParty
 
     def self.default_options
-      Thread.current["WoocommerceAPI"] || raise("Session has not been activated yet")
+      Thread.current["WoocommerceAPIV2"] || raise("Session has not been activated yet")
     end
 
     def self.default_client_options
@@ -12,7 +12,7 @@ module WoocommerceAPIV2
         format: :json,
         headers: { "Accept"       => "application/json",
                    "Content-Type" => "application/json",
-                   "User-Agent"   => "WoocommerceAPI/#{VERSION}" }
+                   "User-Agent"   => "WoocommerceAPIV2/#{VERSION}" }
       }
     end
 
@@ -29,7 +29,7 @@ module WoocommerceAPIV2
       client_options[:wordpress_api] = params.delete(:wordpress_api)
       client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version], client_options[:wordpress_api])
       session_options = self.class.default_client_options.merge(client_options)
-      Thread.current["WoocommerceAPI"] = session_options
+      Thread.current["WoocommerceAPIV2"] = session_options
     end
 
     def self.perform_request(http_method, path, options = {}, &block)

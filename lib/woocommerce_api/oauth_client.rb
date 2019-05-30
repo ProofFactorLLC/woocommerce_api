@@ -15,7 +15,7 @@ module WoocommerceAPIV2
   private
 
     def self.oauth_url(http_method, path, params={})
-      oauth_options = Thread.current["WoocommerceAPI"]
+      oauth_options = Thread.current["WoocommerceAPIV2"]
       parsed_url = URI::parse("#{oauth_options[:base_uri]}#{path}")
       if parsed_url.query
         CGI::parse(parsed_url.query).each do |key, value|

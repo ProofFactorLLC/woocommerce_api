@@ -3,7 +3,7 @@ require 'spec_helper'
 describe WoocommerceAPIV2::Resource do
   context "include_root_in_json" do
     it "can handle multi-thread" do
-      Thread.current["WoocommerceAPI"] = nil
+      Thread.current["WoocommerceAPIV2"] = nil
       WoocommerceAPIV2::Client.new(consumer_key: 'ABC_KEY', consumer_secret: 'ABC_SECRET', store_url: 'https://api.woocommerce.com/ABC', wordpress_api: true)
 
       Thread.new do
