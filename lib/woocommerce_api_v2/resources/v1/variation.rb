@@ -1,5 +1,5 @@
-require "woocommerce_api/resources/legacy/image"
-require "woocommerce_api/resources/legacy/dimensions"
+require "woocommerce_api_v2/resources/legacy/image"
+require "woocommerce_api_v2/resources/legacy/dimensions"
 
 module WoocommerceAPIV2
   module V1

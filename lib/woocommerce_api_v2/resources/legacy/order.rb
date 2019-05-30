@@ -1,10 +1,10 @@
-require "woocommerce_api/resources/legacy/address"
-require "woocommerce_api/resources/legacy/customer"
-require "woocommerce_api/resources/legacy/fee_line"
-require "woocommerce_api/resources/legacy/shipping_line"
-require "woocommerce_api/resources/legacy/coupon_line"
-require "woocommerce_api/resources/legacy/tax_line"
-require "woocommerce_api/resources/legacy/payment_details"
+require "woocommerce_api_v2/resources/legacy/address"
+require "woocommerce_api_v2/resources/legacy/customer"
+require "woocommerce_api_v2/resources/legacy/fee_line"
+require "woocommerce_api_v2/resources/legacy/shipping_line"
+require "woocommerce_api_v2/resources/legacy/coupon_line"
+require "woocommerce_api_v2/resources/legacy/tax_line"
+require "woocommerce_api_v2/resources/legacy/payment_details"
 
 module WoocommerceAPIV2
   module V3

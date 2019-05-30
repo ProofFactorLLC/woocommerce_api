@@ -1,4 +1,4 @@
-require "woocommerce_api/resources/legacy/variation"
+require "woocommerce_api_v2/resources/legacy/variation"
 
 module WoocommerceAPIV2
   module V3

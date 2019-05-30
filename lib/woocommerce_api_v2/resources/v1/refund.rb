@@ -1,4 +1,4 @@
-require "woocommerce_api/resources/v1/line_item"
+require "woocommerce_api_v2/resources/v1/line_item"
 
 module WoocommerceAPIV2
   module V1

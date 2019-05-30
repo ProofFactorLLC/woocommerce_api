@@ -1,9 +1,9 @@
-require "woocommerce_api/resources/v1/address"
-require "woocommerce_api/resources/v1/customer"
-require "woocommerce_api/resources/v1/fee_line"
-require "woocommerce_api/resources/v1/shipping_line"
-require "woocommerce_api/resources/v1/coupon_line"
-require "woocommerce_api/resources/v1/tax_line"
+require "woocommerce_api_v2/resources/v1/address"
+require "woocommerce_api_v2/resources/v1/customer"
+require "woocommerce_api_v2/resources/v1/fee_line"
+require "woocommerce_api_v2/resources/v1/shipping_line"
+require "woocommerce_api_v2/resources/v1/coupon_line"
+require "woocommerce_api_v2/resources/v1/tax_line"
 
 module WoocommerceAPIV2
   module V1

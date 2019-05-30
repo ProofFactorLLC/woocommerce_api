@@ -1,4 +1,4 @@
-require "woocommerce_api/resources/legacy/line_item"
+require "woocommerce_api_v2/resources/legacy/line_item"
 
 module WoocommerceAPIV2
   module V3

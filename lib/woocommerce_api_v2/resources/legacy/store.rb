@@ -1,4 +1,4 @@
-require "woocommerce_api/resources/legacy/meta"
+require "woocommerce_api_v2/resources/legacy/meta"
 
 module WoocommerceAPIV2
   module V3

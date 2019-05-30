@@ -1,4 +1,4 @@
-require "woocommerce_api/resources/meta_datum"
+require "woocommerce_api_v2/resources/meta_datum"
 module WoocommerceAPIV2
   module V1
     class LineItem < Resource

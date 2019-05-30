@@ -1,5 +1,5 @@
-require "woocommerce_api/resources/v1/variation"
-require "woocommerce_api/resources/v1/variation"
+require "woocommerce_api_v2/resources/v1/variation"
+require "woocommerce_api_v2/resources/v1/variation"
 
 
 module WoocommerceAPIV2
