@@ -3,12 +3,88 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6f6a2d-b491-43ad-9454-33dccfe4a7b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api/client.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/associations.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api/concerns/associations.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/oauth_client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api/oauth_client.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resource_proxy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api/resource_proxy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/client_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/client_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/woocommerce_api/resource_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/woocommerce_api/resource_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/client.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/client_error.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/client_error.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/associations.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/associations.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/attribute_assignment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/attribute_assignment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/attribute_slicer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/attribute_slicer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/params_converter.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/params_converter.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/concerns/singleton.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/singleton.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/oauth_client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/oauth_client.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resource_proxy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resource_proxy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/address.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/address.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/coupon.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/coupon.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/coupon_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/coupon_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/delivery.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/delivery.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/dimensions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/dimensions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/fee_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/fee_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/image.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/image.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/line_item.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/meta.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/meta.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/order.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/order_note.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/order_note.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/payment_details.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/payment_details.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/product_attribute.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/product_attribute.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/product_category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/product_category.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/product_review.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/product_review.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/refund.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/refund.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/shipping_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/shipping_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/store.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/store.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/tax_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/tax_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/variation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/variation.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/legacy/webhook.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/legacy/webhook.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/meta_datum.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/meta_datum.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/proxy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/proxy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/address.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/address.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/coupon.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/coupon.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/coupon_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/coupon_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/delivery.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/delivery.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/dimensions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/dimensions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/fee_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/fee_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/image.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/image.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/line_item.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/order.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/order_note.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/order_note.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/payment_details.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/payment_details.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/product_review.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/product_review.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/refund.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/refund.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/shipping_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/shipping_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/store.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/store.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/tax_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/tax_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/variation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/variation.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v1/webhook.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v1/webhook.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/address.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/address.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/coupon.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/coupon.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/coupon_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/coupon_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/delivery.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/delivery.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/dimensions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/dimensions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/fee_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/fee_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/image.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/image.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/line_item.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/order.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/order_note.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/order_note.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/payment_details.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/payment_details.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/payment_gateway.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/payment_gateway.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/product_review.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/product_review.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/refund.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/refund.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/shipping_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/shipping_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/store.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/store.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/tax_line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/tax_line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/tool.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/tool.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/variation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/variation.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/resources/v2/webhook.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/resources/v2/webhook.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/woocommerce_api/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/woocommerce_api_v2/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/support/shared/contexts_for_woocommerce_api_services.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/shared/contexts_for_woocommerce_api_services.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woocommerce_api_v2.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce_api_v2.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +93,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/woocommerce_api_v2.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="98">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixtures/vcr_cassettes/v1/coupon.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -47,7 +128,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/version.rb">
+        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/version.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="9" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="9" />
@@ -56,19 +137,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/client.rb">
+        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/client.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="21" />
+              <caret column="7" selection-start-column="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/oauth_client.rb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/oauth_client.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -77,16 +158,7 @@
         <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/resource_proxy.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-650">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -115,6 +187,7 @@
         <option value="$PROJECT_DIR$/spec/woocommerce_api/resource_spec.rb" />
         <option value="$PROJECT_DIR$/spec/client_spec.rb" />
         <option value="$PROJECT_DIR$/lib/woocommerce_api/concerns/associations.rb" />
+        <option value="$PROJECT_DIR$/woocommerce_api_v2.gemspec" />
       </list>
     </option>
   </component>
@@ -139,27 +212,31 @@
             <path>
               <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="vcr_cassettes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="vcr_cassettes" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
-              <item name="concerns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woocommerce_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="woocommerce_api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce_api_v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,19 +274,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559212128334</updated>
-      <workItem from="1559212129602" duration="533000" />
+      <workItem from="1559212129602" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138000" />
+    <option name="totallyTimeSpent" value="656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23382173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2020757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -218,7 +295,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3377193" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -238,36 +315,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/concerns/associations.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/associations.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/concerns/attribute_assignment.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/attribute_assignment.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/concerns/attribute_slicer.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/attribute_slicer.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/concerns/params_converter.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/concerns/params_converter.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/resource_proxy.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/resource_proxy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-650">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/woocommerce_api_v2.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -283,24 +346,41 @@
     <entry file="file://$PROJECT_DIR$/VERSION">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/version.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/version.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="9" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/client.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="21" />
+          <caret column="7" selection-start-column="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api/oauth_client.rb">
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2/oauth_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/woocommerce_api_v2.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixtures/vcr_cassettes/v1/coupon.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woocommerce_api_v2.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

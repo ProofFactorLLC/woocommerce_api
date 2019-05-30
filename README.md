@@ -3,10 +3,10 @@
 [![Build Status](https://semaphoreci.com/api/v1/tradegecko/woocommerce_api/branches/fix-variations/badge.svg)](https://semaphoreci.com/tradegecko/woocommerce_api)
 ## Installation
 ```ruby
-gem "woocommerce_api", github: "tradegecko/woocommerce_api"
+gem "woocommerce_api_v2", github: "woocommerce_api_v2"
 ```
 ```ruby
-require "woocommerce_api"
+require "woocommerce_api_v2"
 ```
 
 ## Initialize authorize access

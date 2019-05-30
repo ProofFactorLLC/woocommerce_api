@@ -3,7 +3,7 @@ module WoocommerceAPIV2
     include HTTParty
 
     def self.perform_request(http_method, path, options = {}, &block)
-      ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+      ActiveSupport::Notifications.instrument("request.woocommerce_api_v2") do |payload|
         request_uri = oauth_url(http_method, path)
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = request_uri

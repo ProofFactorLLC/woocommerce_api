@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "woocommerce_api"
-  gem.homepage = "http://github.com/tradegecko/woocommerce_api"
+  gem.name = "woocommerce_api_v2"
+  gem.homepage = "http://github.com/tradegecko/woocommerce_api_v2"
   gem.license = "MIT"
   gem.summary = %Q{Enables Ruby applications to communicate with the WooCommerce API}
   gem.description = %Q{Enables Ruby applications to communicate with the WooCommerce API.}
@@ -40,7 +40,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "woocommerce_api #{version}"
+  rdoc.title = "woocommerce_api_v2 #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

@@ -13,7 +13,7 @@ shared_context "woocommerce_api_services" do |options|
     }
   end
 
-  let(:woocommerce_api) { WoocommerceAPIV2::Client.new(woocommerce_params) }
+  let(:woocommerce_api_v2) { WoocommerceAPIV2::Client.new(woocommerce_params) }
 
   before { woocommerce_api }
 

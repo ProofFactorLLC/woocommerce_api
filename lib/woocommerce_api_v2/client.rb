@@ -33,7 +33,7 @@ module WoocommerceAPIV2
     end
 
     def self.perform_request(http_method, path, options = {}, &block)
-      ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+      ActiveSupport::Notifications.instrument("request.woocommerce_api_v2") do |payload|
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = path
         payload[:request_body]  = options[:body]
