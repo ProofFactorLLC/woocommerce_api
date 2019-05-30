@@ -5,7 +5,7 @@
 # stub: woocommerce_api 1.1.0 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "woocommerce_api".freeze
+  s.name = "woocommerce_api_prooffactor".freeze
   s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
