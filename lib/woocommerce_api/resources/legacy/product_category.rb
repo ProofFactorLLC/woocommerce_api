@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class ProductCategory < Resource
       attribute :id, Integer

@@ -15,7 +15,7 @@ shared_examples_for "a woocommerce store details" do |options|
   end
 end
 
-describe WoocommerceAPI::Store do
+describe WoocommerceAPIV2::Store do
   include_context "woocommerce_api_services", version: 'v1', wordpress_api: true, use_cassette: 'v1/store_v1' do
     it_behaves_like "a woocommerce store details", version: 'v1'
   end

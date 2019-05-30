@@ -1,9 +1,9 @@
 require "woocommerce_api/resources/v2/variation"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V2
     class Product < Resource
-      include WoocommerceAPI::AttributeSlicer
+      include WoocommerceAPIV2::AttributeSlicer
 
       def as_json(options={})
         product_attributes = super(options)
@@ -85,7 +85,7 @@ module WoocommerceAPI
       has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
 
       def variations
-        @variations ||= WoocommerceAPI::Variation.all(self.id)
+        @variations ||= WoocommerceAPIV2::Variation.all(self.id)
       end
     end
   end

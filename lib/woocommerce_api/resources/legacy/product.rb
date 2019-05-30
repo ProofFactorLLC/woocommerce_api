@@ -1,6 +1,6 @@
 require "woocommerce_api/resources/legacy/variation"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class Product < Resource
       def as_json(options={})

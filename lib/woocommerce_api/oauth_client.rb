@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   class OauthClient
     include HTTParty
 

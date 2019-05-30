@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V2
     class ProductReview < Resource
       # Read Only

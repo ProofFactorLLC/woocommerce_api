@@ -31,13 +31,13 @@ shared_examples_for "a woocommerce legacy store details" do |options|
   end
 end
 
-describe WoocommerceAPI::Store do
+describe WoocommerceAPIV2::Store do
   include_context "woocommerce_api_services", version: 'v3', use_cassette: 'legacy/store_v3' do
     it_behaves_like "a woocommerce legacy store details", version: 'v3'
   end
 end
 
-describe WoocommerceAPI::Store do
+describe WoocommerceAPIV2::Store do
   include_context "woocommerce_api_services", version: 'v2', use_cassette: 'legacy/store_v2' do
     it_behaves_like "a woocommerce legacy store details", version: 'v2'
   end

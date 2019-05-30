@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module AttributeSlicer
     def slice_by_sync_type(sync_type, attr_hash)
       case sync_type&.to_sym

@@ -17,7 +17,7 @@ shared_examples_for "a woocommerce product CRUD" do
     }
   end
 
-  let(:products) { WoocommerceAPI::Product.all }
+  let(:products) { WoocommerceAPIV2::Product.all }
   let(:product) { products.first }
 
   it "responses collection of product" do
@@ -37,7 +37,7 @@ shared_examples_for "a woocommerce product CRUD" do
   end
 end
 
-describe WoocommerceAPI::Product do
+describe WoocommerceAPIV2::Product do
   it_behaves_like "a woocommerce resource"
 
   context "when CRUD with standalone product" do

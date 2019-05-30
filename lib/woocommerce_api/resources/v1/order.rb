@@ -5,7 +5,7 @@ require "woocommerce_api/resources/v1/shipping_line"
 require "woocommerce_api/resources/v1/coupon_line"
 require "woocommerce_api/resources/v1/tax_line"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V1
     class Order < Resource
       attribute :id, Integer
@@ -52,7 +52,7 @@ module WoocommerceAPI
       attribute :version                   , String             , writer: :private
 
       def order_notes
-        WoocommerceAPI::OrderNote.all(self.id)
+        WoocommerceAPIV2::OrderNote.all(self.id)
       end
 
       def paid
@@ -60,7 +60,7 @@ module WoocommerceAPI
       end
 
       def customer
-        WoocommerceAPI::Customer.find(self.customer_id)
+        WoocommerceAPIV2::Customer.find(self.customer_id)
       end
 
       def shipment_details

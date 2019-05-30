@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V1
     class CouponLine < Resource
       attribute :id, Integer

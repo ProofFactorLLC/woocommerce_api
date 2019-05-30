@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'woocommerce_api'
+require 'woocommerce_api_v2'
 require 'rspec'
 require 'pry'
 

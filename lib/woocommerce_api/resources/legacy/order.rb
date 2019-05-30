@@ -6,7 +6,7 @@ require "woocommerce_api/resources/legacy/coupon_line"
 require "woocommerce_api/resources/legacy/tax_line"
 require "woocommerce_api/resources/legacy/payment_details"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class Order < Resource
       attribute :id, Integer
@@ -54,7 +54,7 @@ module WoocommerceAPI
       has_many :refunds, class_name: 'OrderRefund', resource_uri: '/refunds'
 
       def order_notes
-        WoocommerceAPI::OrderNote.all(self.id)
+        WoocommerceAPIV2::OrderNote.all(self.id)
       end
 
       def paid

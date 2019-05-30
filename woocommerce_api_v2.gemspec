@@ -5,7 +5,7 @@
 # stub: woocommerce_api 1.1.0 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "woocommerce_api_prooffactor".freeze
+  s.name = "woocommerce_api_v2".freeze
   s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    "lib/woocommerce_api.rb",
+    "lib/woocommerce_api_v2.rb",
     "lib/woocommerce_api/client.rb",
     "lib/woocommerce_api/client_error.rb",
     "lib/woocommerce_api/concerns/associations.rb",

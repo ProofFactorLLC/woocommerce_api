@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module AttributeAssignment
     def assign_attributes(new_attributes)
       return if new_attributes.blank?

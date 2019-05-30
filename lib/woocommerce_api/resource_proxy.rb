@@ -1,11 +1,11 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   class ResourceProxy
     include Virtus.model
     include ActiveModel::Model
     include ActiveModel::Serializers::JSON
-    include WoocommerceAPI::Singleton
-    include WoocommerceAPI::AttributeAssignment
-    include WoocommerceAPI::ParamsConverter
+    include WoocommerceAPIV2::Singleton
+    include WoocommerceAPIV2::AttributeAssignment
+    include WoocommerceAPIV2::ParamsConverter
     TIMEOUT_OPTIONS = {timeout: 30}
 
     attr_reader :raw_params, :model
@@ -17,7 +17,7 @@ module WoocommerceAPI
     end
 
     def self.legacy_api?
-      !WoocommerceAPI::Client.default_options[:wordpress_api]
+      !WoocommerceAPIV2::Client.default_options[:wordpress_api]
     end
 
     def method_missing(method, *args, &block)
@@ -28,10 +28,10 @@ module WoocommerceAPI
       header_request = options.delete(:header_request)
       options = TIMEOUT_OPTIONS.merge(options)
       response = begin
-        if WoocommerceAPI::Client.default_options[:mode] == :oauth_http
-          WoocommerceAPI::OauthClient.send(verb, url, options)
+        if WoocommerceAPIV2::Client.default_options[:mode] == :oauth_http
+          WoocommerceAPIV2::OauthClient.send(verb, url, options)
         else
-          WoocommerceAPI::Client.send(verb, url, options)
+          WoocommerceAPIV2::Client.send(verb, url, options)
         end
       end
 
@@ -72,8 +72,8 @@ module WoocommerceAPI
   private
 
     def version_model
-      current_version = if !!WoocommerceAPI::Client.default_options[:wordpress_api]
-                          WoocommerceAPI::Client.default_options[:version]&.upcase
+      current_version = if !!WoocommerceAPIV2::Client.default_options[:wordpress_api]
+                          WoocommerceAPIV2::Client.default_options[:version]&.upcase
                         else
                           'V3'
                         end

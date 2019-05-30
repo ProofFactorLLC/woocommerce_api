@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module Singleton
     module ClassMethods
       attr_writer :singleton_name, :collection_name

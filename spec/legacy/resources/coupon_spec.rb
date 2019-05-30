@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe WoocommerceAPI::Coupon do
+describe WoocommerceAPIV2::Coupon do
   it_behaves_like "a woocommerce resource"
   include_context "woocommerce_api_services", use_cassette: 'legacy/coupon'
 

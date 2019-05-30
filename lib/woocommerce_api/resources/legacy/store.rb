@@ -1,6 +1,6 @@
 require "woocommerce_api/resources/legacy/meta"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class Store < Resource
       attribute :description

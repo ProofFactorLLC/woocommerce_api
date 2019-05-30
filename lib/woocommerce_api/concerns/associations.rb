@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module Associations
     module ClassMethods
       def has_many(association_name, options={})

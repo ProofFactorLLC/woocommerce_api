@@ -1,7 +1,7 @@
 require "woocommerce_api/resources/legacy/image"
 require "woocommerce_api/resources/legacy/dimensions"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class Variation < Resource
       def load(attributes)

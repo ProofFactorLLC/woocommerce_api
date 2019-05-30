@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class Customer < Resource
       attribute :id, Integer

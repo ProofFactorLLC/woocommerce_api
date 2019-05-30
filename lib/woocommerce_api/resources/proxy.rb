@@ -1,4 +1,4 @@
-class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Variation < WoocommerceAPIV2::ResourceProxy
   DEFAULT_PER_PAGE = 100
 
   def self.collection_path(product_id)
@@ -52,34 +52,34 @@ class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
   end
 end
 
-class WoocommerceAPI::Product < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Product < WoocommerceAPIV2::ResourceProxy
   def self.sku(sku)
     extract_resources(http_request(:get, "/products?sku=#{CGI.escape(sku)}"))
   end
 end
 
-class WoocommerceAPI::Dimensions < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Dimensions < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::Customer < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Customer < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::ProductReview < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::ProductReview < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::Image < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Image < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::Store < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Store < WoocommerceAPIV2::ResourceProxy
   def self.details
     extract_resource(http_request(:get, "/"))
   end
 end
 
-class WoocommerceAPI::Address < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Address < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::Order < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Order < WoocommerceAPIV2::ResourceProxy
   def self.statuses
     response = http_request(:get, '/orders/statuses')
     response['order_statuses']
@@ -90,22 +90,22 @@ class WoocommerceAPI::Order < WoocommerceAPI::ResourceProxy
   end
 end
 
-class WoocommerceAPI::LineItem < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::LineItem < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::ShippingLine < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::ShippingLine < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::FeeLine < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::FeeLine < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::CouponLine < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::CouponLine < WoocommerceAPIV2::ResourceProxy
   def coupon
     Coupon.find_by_code(code)
   end
 end
 
-class WoocommerceAPI::Coupon < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Coupon < WoocommerceAPIV2::ResourceProxy
   def self.find_by_code(code)
     return if code.blank?
     resource = http_request(:get, "#{collection_path}/code/#{code}")
@@ -113,13 +113,13 @@ class WoocommerceAPI::Coupon < WoocommerceAPI::ResourceProxy
   end
 end
 
-class WoocommerceAPI::PaymentDetails < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::PaymentDetails < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::OrderRefund < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::OrderRefund < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::OrderNote < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::OrderNote < WoocommerceAPIV2::ResourceProxy
   def self.collection_path(prefix_options='', param_options=nil)
     "/orders/#{@order_id}/notes/"
   end
@@ -141,16 +141,16 @@ class WoocommerceAPI::OrderNote < WoocommerceAPI::ResourceProxy
   end
 end
 
-class WoocommerceAPI::Webhook < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Webhook < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::WebhookDelivery < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::WebhookDelivery < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::PaymentGateway < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::PaymentGateway < WoocommerceAPIV2::ResourceProxy
 end
 
-class WoocommerceAPI::Tool < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::Tool < WoocommerceAPIV2::ResourceProxy
   def self.collection_path(prefix_options='', param_options=nil)
     "/system_status/tools"
   end
@@ -161,13 +161,13 @@ class WoocommerceAPI::Tool < WoocommerceAPI::ResourceProxy
   end
 end
 
-class WoocommerceAPI::SystemStatus < WoocommerceAPI::ResourceProxy
+class WoocommerceAPIV2::SystemStatus < WoocommerceAPIV2::ResourceProxy
   def self.info
     http_request(:get, "/system_status")
   end
 end
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V2
     class SystemStatus < Resource
     end

@@ -1,5 +1,5 @@
 require "woocommerce_api/resources/meta_datum"
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V3
     class LineItem < Resource
       attribute :id          , Integer

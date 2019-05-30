@@ -1,10 +1,10 @@
 require "woocommerce_api/resources/legacy/image"
 require "woocommerce_api/resources/legacy/dimensions"
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V2
     class Variation < Resource
-      include WoocommerceAPI::AttributeSlicer
+      include WoocommerceAPIV2::AttributeSlicer
 
       def load(attributes)
         # Rename restricted attributes

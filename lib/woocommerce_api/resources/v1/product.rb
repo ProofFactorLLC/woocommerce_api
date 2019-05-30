@@ -2,10 +2,10 @@ require "woocommerce_api/resources/v1/variation"
 require "woocommerce_api/resources/v1/variation"
 
 
-module WoocommerceAPI
+module WoocommerceAPIV2
   module V1
     class Product < Resource
-      include WoocommerceAPI::AttributeSlicer
+      include WoocommerceAPIV2::AttributeSlicer
 
       def as_json(options={})
         product_attributes = super(options)

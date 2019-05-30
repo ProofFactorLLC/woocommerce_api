@@ -1,11 +1,11 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   class Resource
     include Virtus.model
     include ActiveModel::Model
     include ActiveModel::Serializers::JSON
-    include WoocommerceAPI::Associations
-    include WoocommerceAPI::Singleton
-    include WoocommerceAPI::AttributeAssignment
+    include WoocommerceAPIV2::Associations
+    include WoocommerceAPIV2::Singleton
+    include WoocommerceAPIV2::AttributeAssignment
 
     attr_reader :raw_params
 
@@ -24,7 +24,7 @@ module WoocommerceAPI
     end
 
     def self.legacy_api?
-      !WoocommerceAPI::Client.default_options[:wordpress_api]
+      !WoocommerceAPIV2::Client.default_options[:wordpress_api]
     end
 
     def load(params)

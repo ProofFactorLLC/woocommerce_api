@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe WoocommerceAPI::Customer do
+describe WoocommerceAPIV2::Customer do
   it_behaves_like "a woocommerce resource"
   include_context "woocommerce_api_services", use_cassette: 'legacy/customer'
 

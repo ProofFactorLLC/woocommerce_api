@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   class ClientError < StandardError
     attr_accessor :code
     def initialize(code, response)

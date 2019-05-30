@@ -1,4 +1,4 @@
-module WoocommerceAPI
+module WoocommerceAPIV2
   module ParamsConverter
     module ClassMethods
       DATE_KEYS = [:after, :before].freeze

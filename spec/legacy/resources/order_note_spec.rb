@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe WoocommerceAPI::OrderNote do
+describe WoocommerceAPIV2::OrderNote do
   it_behaves_like "a woocommerce resource"
   include_context "woocommerce_api_services", use_cassette: 'legacy/order_note'
 
@@ -26,7 +26,7 @@ describe WoocommerceAPI::OrderNote do
   end
 
   context "from order object" do
-    let(:order) { WoocommerceAPI::Order.find 6149}
+    let(:order) { WoocommerceAPIV2::Order.find 6149}
 
     describe "#order_notes" do
       it "returns order's notes collection" do
